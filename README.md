@@ -1,4 +1,4 @@
-# face segmentation usging dlib and opencv
+# face segmentation using dlib and opencv
 
 This script is based on https://github.com/matthewearl/faceswap
 

@@ -24,7 +24,7 @@
 #     USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 """
-# face segmentation usging dlib and opencv
+# face segmentation using dlib and opencv
 
 This script detects and segments faces in the input image.
 
