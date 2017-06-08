@@ -65,7 +65,7 @@ def print_usage():
 ./faceseg.py <image> [<output image>]
 '''
 
-PREDICTOR_PATH = "./shape_predictor_68_face_landmarks.dat"
+PREDICTOR_PATH = r"./shape_predictor_68_face_landmarks.dat"
 SCALE_FACTOR = 1
 FEATHER_AMOUNT = 11
 
@@ -272,6 +272,8 @@ if __name__ == '__main__':
 #    cv2.imshow('mask', mask*255)
 #    cv2.waitKey(0)
     output_im = mask * im1
+    # put original image and output image horizontally
+    output_im = numpy.hstack([im1, output_im])
 
     save_name = 'output.jpg'
     if len(sys.argv) > 2:
